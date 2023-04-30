@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #1d1d1d;
+}
+.container-login{
+    position: relative;
+    width: 380px;
+    height: 420px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px rgb(206, 22, 22);
+    border-radius: 5px;
+}
+.container-login form{
+    position: absolute;
+    inset: 4px;
+    padding: 50px 40px;
+    border-radius: 8px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+}
+.container-login form h2{
+    color: rgb(95, 95, 95);
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.1em;
+    animation:tracking-in-contract 0.4s linear both
+}
+
+@keyframes tracking-in-contract {
+	0%{letter-spacing:.25em;opacity:0}
+	40%{opacity:.6}
+	100%{letter-spacing:normal;opacity:1}
+}
+.container-login form .input-box{
+    position: relative;
+    width: 300px;
+    margin-top: 35px;
+}
+.container-login form .input-box input{
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    z-index: 10;
+}
+.container-login form .input-box span {
+    position: absolute;
+    left: 0;
+    padding: 20px 10px 10px;
+    pointer-events: none;
+    color: rgb(168, 168, 168);
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.3s;
+}
+.container-login form .input-box input:valid ~ span,
+.container-login form .input-box input:focus ~ span {
+    color: rgb(163, 163, 163);
+    font-size: 0.75em;
+    background-color: #ffffff;
+    transform: translateY(-34px);
+}
+.container-login form .input-box i{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    border: 1px solid #ff6868;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: .5s;
+    pointer-events: none;
+}
+
+.container-login form .input-box input:valid ~ i,
+.container-login form .input-box input:focus ~ i {
+    height: 44px;
+	background-color: transparent;
+	border: 2px solid #ff6868;
+}
+
+.container-login form .links{
+    display: flex;
+    justify-content: space-between;
+}
+.container-login form .links a {
+    margin: 10px 0;
+    font-size: 0.75em;
+    color: rgb(90, 90, 90);
+    text-decoration: none;
+}
+.container-login form .links a:hover{
+    color: rgb(255, 49, 49);
+    text-decoration: underline;
+}
+.container-login form input[type="submit"]{
+    border: none;
+    outline: none;
+    padding: 9px 25px;
+    background: #ff6868;
+    cursor: pointer;
+    font-size: 0.9em;
+    border-radius: 5px;
+    font-weight: 600;
+    width: 150px;
+    margin: 10px auto;
+}
+.container-login form input[type="submit"]:active{
+    opacity: 0.8;
+}
