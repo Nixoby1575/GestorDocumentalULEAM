@@ -1,11 +1,11 @@
-function login(params) {
-    var user, password
+function login() {
+    var User, Password
 
-    user = document.getElementById('user').value;
-    password = document.getElementById('password').value;
+    User = document.getElementById('user').value;
+    Password = document.getElementById('password').value;
 
-    if(user == 'alexjf1575' && password == '1575'){
-        alert("Inicio de Sesión exitoso")
+    if(User == 'alexjf1575' && Password == '1575'){
+        window.location = "index.html";
     }
     else{
         alert("Datos Incorrectos")

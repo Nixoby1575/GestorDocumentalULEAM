@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <document>
+    <id>1</id>
+    <title>Documento 1</title>
+    <author>John Doe</author>
+    <date>2023-06-10</date>
+    <description>Descripción del documento 1.</description>
+    <file>documento1.pdf</file>
+  </document>
+  <document>
+    <id>2</id>
+    <title>Documento 2</title>
+    <author>Jane Smith</author>
+    <date>2023-06-09</date>
+    <description>Descripción del documento 2.</description>
+    <file>documento2.docx</file>
+  </document>
+  <document>
+    <id>3</id>
+    <title>Documento 3</title>
+    <author>Michael Johnson</author>
+    <date>2023-06-08</date>
+    <description>Descripción del documento 3.</description>
+    <file>documento3.xlsx</file>
+  </document>
