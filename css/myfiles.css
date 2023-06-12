@@ -6,7 +6,7 @@
     font-family: 'Poppins', sans-serif;
 }
 body{
-    display: flex;
+
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -150,12 +150,12 @@ body{
     border-radius: 12px;
     white-space: nowrap;
 }
-#home{
-    border-radius: 12px;
-    background: rgb(255, 46, 46);
-}
 .sidebar ul li a:hover {
     color: rgb(204, 204, 204);
+    background: rgb(255, 46, 46);
+}
+#my-files{
+    border-radius: 12px;
     background: rgb(255, 46, 46);
 }
 .sidebar ul li i {
@@ -233,3 +233,115 @@ body{
 .sidebar.active .profile #log-out {
     background: #4e4e4e;;
 }
+
+
+
+
+
+
+
+
+
+
+.box-files {
+    margin: auto auto;
+    width: 50%;
+}
+.container {
+    margin: 20px;
+}
+
+#fileList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#fileList li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#fileList li .file-icon {
+    width: 20px;
+    margin-right: 10px;
+}
+
+#uploadButton {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #e53935;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#uploadButton:hover {
+    background-color: #c62828;
+}
+
+.uploadLabel {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e53935;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.uploadLabel:hover {
+    background-color: #c62828;
+}
+
+h2 {
+    margin-top: 30px;
+    color: #e53935;
+}
+
+#filters {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.filter {
+    margin-bottom: 10px;
+}
+
+.filter label {
+    margin-right: 10px;
+    color: #414141;
+}
+
+.filter select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#searchButton {
+    padding: 10px 20px;
+    background-color: #e53935;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#searchButton:hover {
+    background-color: #c62828;
+}
+table {
+    margin: 20px 0;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+  }
+  
